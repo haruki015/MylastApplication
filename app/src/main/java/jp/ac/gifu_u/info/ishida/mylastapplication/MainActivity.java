@@ -202,7 +202,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == LOCATION_PERMISSION_REQUEST_CODE) {
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                // 許可された場合、再度パーミッションチェックとマップ設定を行う
+
                 checkLocationPermission();
             } else {
                 Toast.makeText(this, "位置情報の許可が必要です", Toast.LENGTH_SHORT).show();
